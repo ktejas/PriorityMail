@@ -61,11 +61,6 @@
     <instance objName="RedMail_object" x="992" y="550" name="inst_D5AF16D6" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="playerObj" x="800" y="100" name="inst_360D4A03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="scoreObj" x="64" y="32" name="inst_624F02BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="mailBoxGreen_obj" x="660" y="400" name="inst_D2D8EE5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="mailBoxRed_Obj" x="192" y="400" name="inst_09A21D2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="mailBoxBlue_obj" x="416" y="240" name="inst_4E784ADA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="mailBoxRed_Obj" x="160" y="240" name="inst_2A5ABC2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="mailBoxGreen_obj" x="32" y="240" name="inst_E56178EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ElementSpawner" x="512" y="32" name="inst_F6418004" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GameManager_obj" x="0" y="0" name="inst_A9CC7819" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

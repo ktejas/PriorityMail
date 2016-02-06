@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>oMailBox</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -53,7 +53,6 @@ Lane = floor(y / 160 + 1);
             <string>if (flag &amp;&amp; x &lt; 660)
 {
 x = x + 15;
-
 }
 if(x &gt; 650 &amp;&amp; state == "idle")
 {
@@ -61,7 +60,7 @@ if(x &gt; 650 &amp;&amp; state == "idle")
 }
 if(state == "PickedUp")
 {
-inst = instance_nearest(x,y,playerObj);
+inst = playerObj; //instance_nearest(x,y,playerObj);
 y = inst.y;
 x = inst.x + sprite_width;
 
@@ -77,93 +76,10 @@ move_towards_point(inst.x,inst.y,25);
 
 }
 
-flag = true;
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="mailBoxBlue_obj">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-var dt = sprite_width/2;
-
-colpoint = collision_point(x+dt ,y,mailBoxBlue_obj,false,false);
-
-if(colpoint &gt; 0)
-flag = false;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="mailBoxGreen_obj">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-var dt = sprite_width/2;
-
-colpoint = collision_point(x+dt ,y,mailBoxGreen_obj,false,false);
-
-if(colpoint &gt; 0)
-flag = false;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="mailBoxRed_Obj">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-var dt = sprite_width/2;
-colpoint = collision_point(x+dt ,y,mailBoxRed_Obj,false,false);
-if(colpoint &gt; 0)
-flag = false;
+if(position_meeting(x+sprite_width/2, y, oMailBox))
+    flag = false
+else
+    flag = true
 </string>
           </argument>
         </arguments>

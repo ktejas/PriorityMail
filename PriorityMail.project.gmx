@@ -51,6 +51,7 @@
     <object>objects\scoreObj</object>
     <object>objects\ElementSpawner</object>
     <object>objects\GameManager_obj</object>
+    <object>objects\oMailBox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainRoom</room>

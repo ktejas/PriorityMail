@@ -38,6 +38,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\scoreFnt</font>
+    <font>fonts\FloatiFony</font>
   </fonts>
   <objects name="objects">
     <object>objects\conveyor_obj</object>
@@ -51,7 +52,7 @@
     <object>objects\scoreObj</object>
     <object>objects\ElementSpawner</object>
     <object>objects\GameManager_obj</object>
-    <object>objects\oMailBox</object>
+    <object>objects\Display_Obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\mainRoom</room>

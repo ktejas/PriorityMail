@@ -39,7 +39,7 @@ prioryTruckNumber  = "Red";
 numOfPriorityMailsSorted = 0;
 maxPMailsToBeSorted = 5;
 totalNumberOfElements = 0;
-
+priorityscore=0;
 
 </string>
           </argument>

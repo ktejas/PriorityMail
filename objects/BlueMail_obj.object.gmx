@@ -29,12 +29,13 @@
 with (inst) { instance_destroy() };
 totalNumberOfElements--;
 score++;
+//with(instance_create(x,y,Display_Obj));
 if(prioryTruckNumber = "Blue")
 {
 numOfPriorityMailsSorted++;
-audio_play_sound(sound3_correct_sort,5,false);
-}
 
+}
+audio_play_sound(sound3_correct_sort,5,false);
 
 
 </string>

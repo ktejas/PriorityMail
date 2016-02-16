@@ -30,6 +30,7 @@ var inst = instance_nearest(x,y,mailBoxBlue_obj);
 with (inst){instance_destroy()};
 totalNumberOfElements--;
 score--;
+instance_create(x,y,Display_Obj);
 numOfPriorityMailsSorted = 0;
 audio_play_sound(sound5_incorrect_sort,5,false);
 
@@ -58,6 +59,7 @@ audio_play_sound(sound5_incorrect_sort,5,false);
             <string>var inst = instance_nearest(x,y,mailBoxGreen_obj);
 with (inst) {instance_destroy()};
 score++;
+instance_create(x,y,Display_Obj);
 totalNumberOfElements--;
 if(prioryTruckNumber = "Green")
 {

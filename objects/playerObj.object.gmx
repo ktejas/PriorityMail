@@ -63,7 +63,7 @@ numOfPriorityMailsSorted = 0;
 state = "PowerUp";
 prioryTruckNumber ="Pink";
 currentPowerUpTime = current_time;
-audio_pause_sound(sound4_game_music);
+//audio_pause_sound(sound4_game_music);
 audio_play_sound(sound0_powerup,10,false);
 }
 
@@ -260,6 +260,7 @@ audio_play_sound(sound2_change_lanes,5,false);
           <argument>
             <kind>1</kind>
             <string>scrPressedSpace();
+
 </string>
           </argument>
         </arguments>
